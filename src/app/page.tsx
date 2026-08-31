@@ -74,22 +74,19 @@ export default function Home() {
         {/* WHO WE ARE — from combined-image.xlsx */}
         <section aria-label="Who we are" className="w-full px-4 py-16 md:py-20">
           <div className="mx-auto max-w-4xl text-center">
-            <p className="text-xs font-bold uppercase tracking-[0.18em] text-steel-600">
-              Who We Are
-            </p>
+          
+             <h2 className="text-2xl font-bold tracking-tight text-navy md:text-3xl mb-6">
+              Who We Are?
+            </h2>
             <h2 className="mt-2 text-2xl font-bold tracking-tight text-navy md:text-3xl">
               International standards, GCC availability.
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-slate-600 md:text-base">
-              Bridging international innovation with local expertise to support utilities, Marine
-              &amp; Power sectors.
+              Delivering quality industrial products and engineering solutions to support Oil & Gas, Marine & Power Sectors. 
             </p>
             <p className="mt-4 text-sm leading-relaxed text-slate-600 md:text-base">
-              <strong className="font-semibold text-navy">NexaFlow Engineering</strong> partners
-              with world-leading manufacturers to deliver reliable, high-performance industrial
-              solutions tailored to the demanding environments of the region. From critical
-              infrastructure to complex process applications, we focus on quality, safety and
-              long-term value for our clients.
+              <strong className="font-semibold text-navy">NexaFlow Engineering</strong> 
+              <strong className="font-semibold text-navy">NexaFlow Engineering</strong> partners with trusted international manufacturers to supply reliable, high-quality industrial products and engineering solutions for demanding applications across the GCC and Middle East. From critical infrastructure to complex process applications, we focus on quality, technical expertise, responsive service and long-term value for our clients.
             </p>
             <div className="mt-6 flex justify-center">
               <Link
@@ -105,15 +102,15 @@ export default function Home() {
         </section>
 
         {/* WHY CHOOSE US? */}
-        <section aria-label="Why choose us?" className="mx-auto max-w-6xl px-4 py-16 md:py-20 bg-white">
+        <section aria-label="Why choose us?" className="mx-auto  px-4 py-16 md:py-20 bg-white">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-2xl font-bold tracking-tight text-navy md:text-3xl mb-6">
               Why Choose Us?
             </h2>
-            <p className="text-base text-slate-600 mb-8">
+            <p className="text-lg text-slate-600 mb-8">
               Your Trusted Partner for Engineering Solutions
             </p>
-            <p className="text-sm leading-relaxed text-slate-600 mb-8">
+            <p className="text-md leading-relaxed text-slate-600 mb-8 text-left">
               <strong className="font-semibold text-navy">NexaFlow Engineering Machinery Trading</strong>,
                based in the UAE, is your trusted partner
               for industrial products, engineering solutions, and technical supplies across the GCC
@@ -123,7 +120,7 @@ export default function Home() {
               and customer satisfaction, we help our clients find the right products and solutions
               for their operational requirements.
             </p>
-            <p className="text-sm leading-relaxed text-slate-600">
+            <p className="text-md leading-relaxed text-slate-600">
               From oil & gas and petrochemical facilities to utilities, marine, power, and
               manufacturing industries, NexaFlow Engineering is committed to delivering dependable
               solutions that create long-term value for our customers.
@@ -134,13 +131,17 @@ export default function Home() {
         {/* OUR CORE VALUES — centered larger badges from previous fix */}
         <section
           aria-label="Our core values"
-          className="border-y border-slate-200 bg-white py-16 md:py-20"
+          className="border-y border-slate-200 bg-grey py-16 md:py-20"
         >
           <div className="mx-auto max-w-6xl px-4">
             <div className="mx-auto max-w-2xl text-center">
-              <p className="text-xs font-bold uppercase tracking-[0.18em] text-steel-600">
+              {/* <p className="text-md font-bold uppercase tracking-[0.18em] text-steel-600">
                 Our Core Values
-              </p>
+              </p> */}
+              <h2 className="text-2xl font-bold tracking-tight text-navy md:text-3xl mb-6">
+              Our Core Values
+            </h2>
+              
               <h2 className="mt-2 text-2xl font-bold tracking-tight text-navy md:text-3xl">
                 The foundation of every solution we deliver.
               </h2>
@@ -168,7 +169,7 @@ export default function Home() {
         </section>
 
         {/* INDUSTRIES WE SERVE — centered larger badges */}
-        <section aria-label="Industries we serve" className="mx-auto max-w-6xl px-4 py-16 md:py-20">
+        <section aria-label="Industries we serve" className="mx-auto px-4 py-16 md:py-20 bg-white">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-2xl font-bold tracking-tight text-navy md:text-3xl">
               Industries We Serve

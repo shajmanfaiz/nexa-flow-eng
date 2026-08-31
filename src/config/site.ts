@@ -10,7 +10,7 @@ export const site = {
   locations: [
     {
       country: 'United Arab Emirates',
-      city: 'Mussafa, UAE',
+      city: 'Mussafa, Abu Dhabi, UAE',
       // detail: 'Industrial Area 12, Near Steel Yard',
     },
     // {
