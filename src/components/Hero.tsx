@@ -19,11 +19,11 @@ export default function Hero() {
         </p> */}
 
         <h1 className="mx-auto max-w-3xl text-3xl font-extrabold leading-tight tracking-tight text-white md:text-5xl">
-          Bridging Global Quality <span className="text-steel-300">Stock.</span>
+          Engineering Solutions.  <span className="text-steel-300">Global Supply.</span>
         </h1>
 
         <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-slate-300 md:text-lg">
-          NexaFlow Engineering Machinery Trading is your trusted partner for comprehensive
+          <span className="text-steel-300">NexaFlow Engineering Machinery Trading </span> is your trusted partner for comprehensive
           industrial solutions across the GCC and Middle East region.
         </p>
 

@@ -20,8 +20,7 @@ export default function Footer() {
               />
             </Link>
             <p className="mt-3 text-sm leading-relaxed text-slate-400">
-              Trusted stockist of pipes, fittings and valves serving EPC contractors and end users
-              across the GCC.
+             Delivering industrial solutions through global partnerships, engineering expertise.
             </p>
             <div className="mt-5 flex flex-col gap-2 sm:flex-row md:flex-col lg:flex-row">
               <a
@@ -47,7 +46,7 @@ export default function Footer() {
 
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-widest text-steel-300">
-              Stock Locations
+              Address
             </h3>
             <ul className="mt-4 space-y-4">
               {site.locations.map((location) => (

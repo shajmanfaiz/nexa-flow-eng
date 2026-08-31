@@ -72,130 +72,62 @@ export default function Home() {
         <Hero />
 
         {/* WHO WE ARE — from combined-image.xlsx */}
-        <section aria-label="Who we are" className="mx-auto max-w-6xl px-4 py-16 md:py-20">
-          <div className="grid grid-cols-1 gap-10 lg:grid-cols-2 lg:items-center">
-            <div>
-              <p className="text-xs font-bold uppercase tracking-[0.18em] text-steel-600">
-                Who We Are
-              </p>
-              <h2 className="mt-2 text-2xl font-bold tracking-tight text-navy md:text-3xl">
-                International standards, GCC availability.
-              </h2>
-              <p className="mt-3 text-sm leading-relaxed text-slate-600 md:text-base">
-                Bridging international innovation with local expertise to support utilities, Marine
-                &amp; Power sectors.
-              </p>
-              <p className="mt-4 text-sm leading-relaxed text-slate-600 md:text-base">
-                <strong className="font-semibold text-navy">NexaFlow Engineering</strong> partners
-                with world-leading manufacturers to deliver reliable, high-performance industrial
-                solutions tailored to the demanding environments of the region. From critical
-                infrastructure to complex process applications, we focus on quality, safety and
-                long-term value for our clients.
-              </p>
+        <section aria-label="Who we are" className="w-full px-4 py-16 md:py-20">
+          <div className="mx-auto max-w-4xl text-center">
+            <p className="text-xs font-bold uppercase tracking-[0.18em] text-steel-600">
+              Who We Are
+            </p>
+            <h2 className="mt-2 text-2xl font-bold tracking-tight text-navy md:text-3xl">
+              International standards, GCC availability.
+            </h2>
+            <p className="mt-3 text-sm leading-relaxed text-slate-600 md:text-base">
+              Bridging international innovation with local expertise to support utilities, Marine
+              &amp; Power sectors.
+            </p>
+            <p className="mt-4 text-sm leading-relaxed text-slate-600 md:text-base">
+              <strong className="font-semibold text-navy">NexaFlow Engineering</strong> partners
+              with world-leading manufacturers to deliver reliable, high-performance industrial
+              solutions tailored to the demanding environments of the region. From critical
+              infrastructure to complex process applications, we focus on quality, safety and
+              long-term value for our clients.
+            </p>
+            <div className="mt-6 flex justify-center">
               <Link
                 href="/products"
                 aria-label="View products"
-                className={buttonVariants({ variant: 'outline', className: 'mt-6' })}
+                className={buttonVariants({ variant: 'outline' })}
               >
                 Products
-                <ArrowRight className="h-4 w-4" aria-hidden="true" />
+                <ArrowRight className="ml-2 h-4 w-4" aria-hidden="true" />
               </Link>
-            </div>
-
-            <div
-              aria-hidden="true"
-              className="relative overflow-hidden rounded-xl border border-slate-200 bg-slate-50 p-6 md:p-8"
-            >
-              <div className="absolute inset-0 bg-gradient-to-br from-steel-50 via-white to-slate-50" />
-              <div className="relative">
-                <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-steel-700">
-                  <Building2 className="h-4 w-4" />
-                  Sharjah &amp; Dammam · Ex-stock
-                </div>
-                <div className="mt-6 grid grid-cols-3 gap-3">
-                  {[
-                    { label: 'Seamless Pipes', spec: 'API 5L / A106' },
-                    { label: 'Buttweld Fittings', spec: 'B16.9' },
-                    { label: 'Forged Flanges', spec: 'B16.5' },
-                    { label: 'Ball Valves', spec: 'API 6D' },
-                    { label: 'Gate Valves', spec: 'API 600' },
-                    { label: 'Check Valves', spec: 'API 6D' },
-                  ].map((item) => (
-                    <div
-                      key={item.label}
-                      className="rounded-lg border border-slate-200 bg-white p-3 text-center shadow-sm"
-                    >
-                      <div className="mx-auto flex h-8 w-8 items-center justify-center rounded-md bg-steel-50 text-steel-600">
-                        <Factory className="h-4 w-4" />
-                      </div>
-                      <p className="mt-2 text-xs font-semibold leading-tight text-navy">
-                        {item.label}
-                      </p>
-                      <p className="text-[10px] font-medium uppercase tracking-wide text-slate-500">
-                        {item.spec}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-                <div className="mt-6 rounded-lg bg-navy-dark px-4 py-3 text-center text-sm text-white">
-                  <span className="font-semibold text-steel-300">EN 10204 3.1</span> MTR with every
-                  dispatch · Heat-number traceability
-                </div>
-              </div>
             </div>
           </div>
         </section>
 
-        {/* WHAT WE STOCK — keep existing 4-product preview but larger */}
-        <section aria-label="Product categories" className="bg-slate-50 py-16 md:py-20">
-          <div className="mx-auto max-w-6xl px-4">
-            <div className="mb-8 text-center">
-              <h2 className="text-2xl font-bold tracking-tight text-navy md:text-3xl">
-                What We Stock
-              </h2>
-              <p className="mt-2 text-slate-500 md:text-lg">
-                Four core product lines, ready for immediate dispatch.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {catalog.map((item) => {
-                const Icon = item.icon;
-                return (
-                  <Link
-                    key={item.id}
-                    href="/products"
-                    aria-label={`View ${item.name}`}
-                    className="group flex items-center gap-3 rounded-xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-200 hover:border-steel-200 hover:shadow-md"
-                  >
-                    <span
-                      aria-hidden="true"
-                      className="flex h-12 w-12 shrink-0 items-center justify-center rounded-lg bg-steel-50 text-steel-600"
-                    >
-                      <Icon className="h-6 w-6" />
-                    </span>
-                    <span className="min-w-0 flex-1">
-                      <span className="block text-sm font-semibold text-navy">{item.name}</span>
-                      <span className="block truncate text-xs text-slate-500">{item.specs[0]}</span>
-                    </span>
-                    <ArrowRight
-                      className="h-4 w-4 shrink-0 text-slate-400 transition-transform duration-200 group-hover:translate-x-0.5 group-hover:text-steel-600"
-                      aria-hidden="true"
-                    />
-                  </Link>
-                );
-              })}
-            </div>
-
-            <div className="mt-8 text-center">
-              <Link
-                href="/products"
-                aria-label="View full product inventory"
-                className="text-sm font-semibold text-steel-700 transition-colors duration-200 hover:text-navy"
-              >
-                View full inventory →
-              </Link>
-            </div>
+        {/* WHY CHOOSE US? */}
+        <section aria-label="Why choose us?" className="mx-auto max-w-6xl px-4 py-16 md:py-20 bg-white">
+          <div className="mx-auto max-w-2xl text-center">
+            <h2 className="text-2xl font-bold tracking-tight text-navy md:text-3xl mb-6">
+              Why Choose Us?
+            </h2>
+            <p className="text-base text-slate-600 mb-8">
+              Your Trusted Partner for Engineering Solutions
+            </p>
+            <p className="text-sm leading-relaxed text-slate-600 mb-8">
+              <strong className="font-semibold text-navy">NexaFlow Engineering Machinery Trading</strong>,
+               based in the UAE, is your trusted partner
+              for industrial products, engineering solutions, and technical supplies across the GCC
+              and Middle East. We work with trusted international manufacturers and suppliers to
+              provide quality products, competitive sourcing, and reliable technical solutions for
+              demanding industrial applications. With a strong focus on quality, responsiveness,
+              and customer satisfaction, we help our clients find the right products and solutions
+              for their operational requirements.
+            </p>
+            <p className="text-sm leading-relaxed text-slate-600">
+              From oil & gas and petrochemical facilities to utilities, marine, power, and
+              manufacturing industries, NexaFlow Engineering is committed to delivering dependable
+              solutions that create long-term value for our customers.
+            </p>
           </div>
         </section>
 
