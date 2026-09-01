@@ -79,13 +79,12 @@ export default function Home() {
               Who We Are?
             </h2>
             <h2 className="mt-2 text-2xl font-bold tracking-tight text-navy md:text-3xl">
-              International standards, GCC availability.
+              Connecting Global Quality with Local Expertise.
             </h2>
             <p className="mt-3 text-sm leading-relaxed text-slate-600 md:text-base">
               Delivering quality industrial products and engineering solutions to support Oil & Gas, Marine & Power Sectors. 
             </p>
             <p className="mt-4 text-sm leading-relaxed text-slate-600 md:text-base">
-              <strong className="font-semibold text-navy">NexaFlow Engineering</strong> 
               <strong className="font-semibold text-navy">NexaFlow Engineering</strong> partners with trusted international manufacturers to supply reliable, high-quality industrial products and engineering solutions for demanding applications across the GCC and Middle East. From critical infrastructure to complex process applications, we focus on quality, technical expertise, responsive service and long-term value for our clients.
             </p>
             <div className="mt-6 flex justify-center">
@@ -107,9 +106,12 @@ export default function Home() {
             <h2 className="text-2xl font-bold tracking-tight text-navy md:text-3xl mb-6">
               Why Choose Us?
             </h2>
-            <p className="text-lg text-slate-600 mb-8">
+              <h2 className="text-2xl font-bold tracking-tight text-navy md:text-3xl mb-6">
               Your Trusted Partner for Engineering Solutions
-            </p>
+            </h2>
+            {/* <p className="text-lg text-slate-600 mb-8">
+              Your Trusted Partner for Engineering Solutions
+            </p> */}
             <p className="text-md leading-relaxed text-slate-600 mb-8 text-left">
               <strong className="font-semibold text-navy">NexaFlow Engineering Machinery Trading</strong>,
                based in the UAE, is your trusted partner

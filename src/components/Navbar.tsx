@@ -10,8 +10,8 @@ import { site } from '@/config/site';
 
 const navLinks = [
   { href: '/', label: 'Home' },
-  { href: '/products', label: 'Products' },
   { href: '/about', label: 'About Us' },
+  { href: '/products', label: 'Products' },
   { href: '/#contact', label: 'Contact' },
 ];
 

@@ -10,17 +10,28 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-4 py-12">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
           <div>
-            <Link href="/" aria-label={`${site.name} home`} className="inline-block rounded-md bg-white p-2">
+            <Link href="/" aria-label={`${site.name} home`} className="flex items-center">
               <Image
-                src="/nexaflow-logo.jpg"
-                alt={`${site.name} logo`}
-                width={160}
-                height={40}
-                className="h-9 w-auto object-contain"
+                src="/nexa-logo-full.png"
+                alt=""
+                aria-hidden="true"
+                width={260}
+                height={91}
+                className="h-12 w-auto object-contain md:h-14"
+                priority
               />
+              {/* <span className="flex flex-col leading-none">
+                <span className="text-[20px] font-extrabold tracking-tight leading-none md:text-[22px]">
+                  <span className="text-navy">Nexa</span>
+                  <span className="text-steel-600">Flow</span>
+                </span>
+                <span className="text-[11px] font-bold tracking-[0.22em] text-slate-500 uppercase md:text-xs">
+                  Engineering
+                </span>
+              </span> */}
             </Link>
             <p className="mt-3 text-sm leading-relaxed text-slate-400">
-             Delivering industrial solutions through global partnerships, engineering expertise.
+             Delivering industrial solutions through Global partnerships & Engineering expertise.
             </p>
             <div className="mt-5 flex flex-col gap-2 sm:flex-row md:flex-col lg:flex-row">
               <a
